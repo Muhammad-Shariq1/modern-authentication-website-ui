@@ -13,6 +13,8 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-bold: 700;
     --radius-3xl: 1.5rem;
@@ -464,6 +466,9 @@
   .text-\[16px\] {
     font-size: 16px;
   }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
   .text-\[24px\] {
     font-size: 24px;
   }
@@ -589,9 +594,25 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .max-2xl\:text-6xl {
+    @media (width < 96rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .max-2xl\:text-\[2px\] {
+    @media (width < 96rem) {
+      font-size: 2px;
+    }
+  }
   .max-2xl\:text-\[22px\] {
     @media (width < 96rem) {
       font-size: 22px;
+    }
+  }
+  .max-2xl\:text-\[26px\] {
+    @media (width < 96rem) {
+      font-size: 26px;
     }
   }
   .max-xl\:grid-cols-2 {
@@ -763,6 +784,42 @@
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
+    }
+  }
+  .min-2xl\:text-6xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .min-2xl\:text-\[2px\] {
+    @media (width >= 96rem) {
+      font-size: 2px;
+    }
+  }
+  .min-2xl\:text-\[22px\] {
+    @media (width >= 96rem) {
+      font-size: 22px;
+    }
+  }
+  .min-2xl\:text-\[23px\] {
+    @media (width >= 96rem) {
+      font-size: 23px;
+    }
+  }
+  .min-2xl\:text-\[24px\] {
+    @media (width >= 96rem) {
+      font-size: 24px;
+    }
+  }
+  .min-2xl\:text-\[26px\] {
+    @media (width >= 96rem) {
+      font-size: 26px;
+    }
+  }
+  .min-2xl\:text-\[26\] {
+    @media (width >= 96rem) {
+      color: 26;
     }
   }
 }
