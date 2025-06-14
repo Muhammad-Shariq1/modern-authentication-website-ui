@@ -393,9 +393,6 @@
   .border-\[\#ffffff\] {
     border-color: #ffffff;
   }
-  .bg-\[\#CC3333\] {
-    background-color: #CC3333;
-  }
   .bg-\[radial-gradient\(\#4B0000\,_\#0F0F0F\)\] {
     background-image: radial-gradient(#4B0000, #0F0F0F);
   }
