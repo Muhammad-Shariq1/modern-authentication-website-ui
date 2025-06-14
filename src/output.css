@@ -13,6 +13,8 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
     --font-weight-bold: 700;
     --radius-3xl: 1.5rem;
@@ -463,9 +465,16 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-\[3px\] {
+    font-size: 3px;
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -494,8 +503,14 @@
   .text-\[42px\] {
     font-size: 42px;
   }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
   .text-\[60px\] {
     font-size: 60px;
+  }
+  .text-\[72px\] {
+    font-size: 72px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -507,6 +522,15 @@
   }
   .text-\[\#ffffff\] {
     color: #ffffff;
+  }
+  .text-\[48\] {
+    color: 48;
+  }
+  .text-\[72\] {
+    color: 72;
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-white {
     color: var(--color-white);
